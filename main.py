@@ -4,8 +4,9 @@ filename = "Steam.csv"
 f = open(filename,"w")
 headers = "Item_name, Price, Quantity, Game\n"
 f.write(headers)
-for i in range(0,3):
+for i in range(1,3):
     url = 'https://steamcommunity.com/market/search?q=#p'+str(i)+'_popular_desc'
+    print(url)
     uClient = uReq(url)
     page_html = uClient.read()
     uClient.close()
