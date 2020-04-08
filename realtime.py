@@ -2,7 +2,6 @@ from urllib.request import urlopen as uReq
 from bs4 import BeautifulSoup as soup 
 import os
 from texttable import Texttable
-
 while True:
     t = Texttable()
     url = 'https://steamcommunity.com/market/'
@@ -34,24 +33,3 @@ while True:
         t.add_rows([[count, item_name,price,quantity+symbol,game]])
         print(t.draw())
         prev_price = int(quantity)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -1,0 +1,6 @@
+#environments
+/env
+#jupyter notebooks
+*.ipynb
+#setting.json
+./.vscode

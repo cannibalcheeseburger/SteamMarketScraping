@@ -1,6 +1,6 @@
 from urllib.request import urlopen as uReq
 from bs4 import BeautifulSoup as soup 
-filename = "Steam.csv"
+filename = "./csv/Steam.csv"
 f = open(filename,"w")
 headers = "Item_name, Price, Quantity, Game\n"
 f.write(headers)
